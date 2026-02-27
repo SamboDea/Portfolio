@@ -81,5 +81,68 @@ textarea::placeholder {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  pointer-events: auto; /* អោយ mouse click ធ្វើការ */
+  pointer-events: auto;
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 36px;
+  color: cyan;
+  text-shadow: 0 0 15px cyan;
+}
+
+.timeline {
+  position: relative;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: cyan;
+  box-shadow: 0 0 15px cyan;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 11px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: cyan;
+  border-radius: 50%;
+  box-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 30px cyan;
+}
+.timeline-content h3 {
+  color: white;
+}
+
+.timeline-content h4 {
+  color: cyan;
+}
+
+.period {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.timeline-content ul {
+  margin-top: 10px;
+}
+
+.timeline-content li {
+  margin-bottom: 6px;
+  color: #ddd;
 }

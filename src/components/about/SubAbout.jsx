@@ -9,6 +9,7 @@ import StepConnector, {
 import { Container } from "react-bootstrap";
 import ComName from "../../widget/ComName";
 import SkillCard from "../skill/SkillCard";
+import Experience from "../experience/Experience";
 const About = () => {
   const ColorlibStepIconRoot = styled("div")(({ theme }) => ({
     backgroundColor: "white",
@@ -134,6 +135,9 @@ const About = () => {
             </div>
           </div>
         </div>
+      </Container>
+      <Container>
+        <Experience />
       </Container>
       <h3 className="text-center text-white mt-3" data-aos="zoom-in">
         EDUCATION

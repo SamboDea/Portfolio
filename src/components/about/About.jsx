@@ -7,6 +7,7 @@ import StepConnector, {
 } from "@mui/material/StepConnector";
 import { Container } from "react-bootstrap";
 import SkillCard from "../skill/SkillCard";
+import Experience from "../experience/Experience";
 const About = () => {
   const ColorlibStepIconRoot = styled("div")(({ theme }) => ({
     backgroundColor: "#ccc",
@@ -131,6 +132,9 @@ const About = () => {
             </div>
           </div>
         </div>
+      </Container>
+      <Container>
+        <Experience />
       </Container>
       <Stepper
         className="mt-lg-3 mt-3 text-white"
