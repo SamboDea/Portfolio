@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import thunderVideo from "../assets/video/thunders.mp4";
+import thunderVideo from "../assets/video/thunder.mp4";
 
 function ThunderVideoController() {
   const videoRef = useRef(null);
