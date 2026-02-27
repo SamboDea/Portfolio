@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import { TfiEmail } from "react-icons/tfi";
 import { FaPhoneAlt } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -44,8 +44,10 @@ const Footer = () => {
               </Link>
             </p>
             <p>
-              <IoLocationOutline />{" "}
-              <span className="ms-2">Orkide, Sensok, PhnomPenh</span>
+              <Link to="https://github.com/SamboDea" target="_blank">
+                <FaGithub />
+                <span className="ms-2">GitHub</span>
+              </Link>
             </p>
           </div>
           <div className="text-center py-lg-4 py-2">

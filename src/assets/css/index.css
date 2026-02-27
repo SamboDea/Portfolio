@@ -30,3 +30,56 @@ input::placeholder {
 textarea::placeholder {
   color: white !important;
 }
+.rain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.rain-drop {
+  position: absolute;
+  top: -40px;
+  width: 2px;
+  height: 30px;
+  background: linear-gradient(transparent, #ffffff);
+  opacity: 0.5;
+  animation: rain-fall linear infinite;
+}
+
+@keyframes rain-fall {
+  from {
+    transform: translateY(-40px);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -99999;
+}
+
+.thunder-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.controls {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  pointer-events: auto; /* អោយ mouse click ធ្វើការ */
+}
